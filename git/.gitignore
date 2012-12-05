@@ -1,0 +1,17 @@
+*.o
+*.lo
+*.la
+#*#
+.*.rej
+*.rej
+.*~
+*~
+.#*
+.DS_Store
+*.sw[po]
+tags
+Session.vim
+*cache.sql
+nytprof
+*.swp
+*.swo
