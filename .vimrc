@@ -5,9 +5,10 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-"set background=dark
-"colorscheme solarized
 set clipboard=unnamed
+
+set background=dark
+colorscheme solarized
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
@@ -141,19 +142,28 @@ augroup filetypedetect
   au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
 augroup END
 
+au BufNewFile,BufRead *.h set filetype=c
+
 " python
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 autocmd FileType python setl tabstop=4 expandtab shiftwidth=4 softtabstop=4
+autocmd BufWritePre *.py :%s/\s\+$//e
 
 " sql
 autocmd FileType sql setl tabstop=4 expandtab shiftwidth=4 softtabstop=4
+
+" ruby
+autocmd FileType ruby setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 " perl
 autocmd FileType perl setl tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 " tex
 autocmd FileType tex setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
+" c
+autocmd FileType c setl tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 " gtags
 nnoremap <C-g> :Gtags -g 
