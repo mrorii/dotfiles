@@ -40,6 +40,7 @@ else
 end
 
 link ".vimrc", "~/.vimrc"
+link ".gvimrc", "~/.gvimrc"
 
 link "git/.gitconfig", "~/.gitconfig"
 link "git/.gitignore", "~/.gitignore"
