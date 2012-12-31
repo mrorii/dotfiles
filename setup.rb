@@ -42,6 +42,8 @@ end
 link ".vimrc", "~/.vimrc"
 link ".gvimrc", "~/.gvimrc"
 
+link ".tmux.conf", "~/.tmux.conf"
+
 link "git/.gitconfig", "~/.gitconfig"
 link "git/.gitignore", "~/.gitignore"
 
