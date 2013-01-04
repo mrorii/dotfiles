@@ -39,6 +39,8 @@ else
   cd "dotfiles"
 end
 
+link ".zshrc", "~/.zshrc"
+
 link ".vimrc", "~/.vimrc"
 link ".gvimrc", "~/.gvimrc"
 
