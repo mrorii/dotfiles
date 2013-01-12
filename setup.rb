@@ -43,6 +43,7 @@ link ".zshrc", "~/.zshrc"
 
 link ".vimrc", "~/.vimrc"
 link ".gvimrc", "~/.gvimrc"
+link ".vim", "~/.vim"
 
 link ".tmux.conf", "~/.tmux.conf"
 
