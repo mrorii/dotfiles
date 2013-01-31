@@ -23,6 +23,7 @@ Bundle 'neocomplcache'
 " Bundle 'gtags'
 Bundle 'rails.vim'
 Bundle 'template.vim'
+Bundle 'nvie/vim-flake8'
 
 filetype plugin indent on
  
