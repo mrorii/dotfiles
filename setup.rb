@@ -35,7 +35,7 @@ cd "~".expand
 if "dotfiles".expand.exist?
   cd "dotfiles"
 else
-  sh "git clone git@github.com:mrorii/dotfiles.git dotfiles"
+  sh "git clone --recursive git@github.com:mrorii/dotfiles.git dotfiles"
   cd "dotfiles"
 end
 

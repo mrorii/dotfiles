@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 
 " set t_Co=256
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 set clipboard=unnamed
