@@ -24,9 +24,10 @@ Bundle 'neocomplcache'
 Bundle 'rails.vim'
 Bundle 'template.vim'
 Bundle 'nvie/vim-flake8'
+Bundle 'tshirtman/vim-cython'
 
 filetype plugin indent on
- 
+
 " Enable syntax highlight
 if &t_Co > 2 || has("gui_running")
   syntax on
@@ -37,7 +38,7 @@ nnoremap <Space>s. :<C-u>source $MYVIMRC<Enter>
 
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_auto_select = 1 
+let g:neocomplcache_enable_auto_select = 1
 
 " Use smartcase.
 let g:neocomplcache_enable_ignore_case = 0
@@ -47,19 +48,19 @@ let g:neocomplcache_enable_camel_case_completion = 1
 " Use underbar completion.
 let g:neocomplcache_enable_underbar_completion = 1
 " Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 3 
+let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_enable_quick_match = 1
 let g:neocomplcache_enable_wildcard = 1
 
 nnoremap <silent> ent :NeoComplCacheCachingTags<CR>
-imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>" 
+imap <expr><TAB> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup() 
+inoremap <expr><C-e>  neocomplcache#cancel_popup()
 imap <C-k> <Plug>(neocomplcache_snippets_expand)
 smap <C-k> <Plug>(neocomplcache_snippets_expand)
 inoremap <expr><C-g> neocomplcache#undo_completion()
@@ -167,8 +168,8 @@ autocmd FileType tex setl tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd FileType c setl tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 " gtags
-nnoremap <C-g> :Gtags -g 
-" all methods inside this file 
+nnoremap <C-g> :Gtags -g
+" all methods inside this file
 nnoremap <C-l> :Gtags -f %<CR>
 " find the definition of thing under cursor
 nnoremap <C-j> :Gtags <C-r><C-w><CR>
