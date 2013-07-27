@@ -7,9 +7,6 @@ call vundle#rc()
 
 set clipboard=unnamed
 
-set background=dark
-colorscheme solarized
-
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
@@ -32,6 +29,9 @@ filetype plugin indent on
 if &t_Co > 2 || has("gui_running")
   syntax on
 endif
+
+set background=dark
+colorscheme solarized
 
 nnoremap <Space>. :<C-u>edit $MYVIMRC<Enter>
 nnoremap <Space>s. :<C-u>source $MYVIMRC<Enter>
