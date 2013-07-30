@@ -16,3 +16,4 @@ nytprof
 *.class
 bin
 build
+.vim/bundle
