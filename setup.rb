@@ -44,6 +44,7 @@ link ".zshrc", "~/.zshrc"
 link ".vimrc", "~/.vimrc"
 link ".gvimrc", "~/.gvimrc"
 link ".vim", "~/.vim"
+sh "vim +BundleInstall +qa"
 
 link ".tmux.conf", "~/.tmux.conf"
 
