@@ -1,0 +1,73 @@
+tap phinze/homebrew-cask || true
+tap homebrew/versions|| true
+update || true
+
+install brew-cask || true
+install git || true
+install tig || true
+install ag || true
+install ack || true
+install gist || true
+install gibo || true
+install hub || true
+install tmux || true
+install wemux || true
+install tree || true
+install htop-osx || true
+install openssl || true
+install readline || true
+install cmake || true
+install fish || true
+install zsh || true
+install wget || true
+install curl || true
+install cmake || true
+install libtool || true
+install automake || true
+install atool || true
+install gradle || true
+install nkf || true
+
+install jq || true
+install python3 || true
+install ruby-build || true
+install rbenv || true
+install opam || true
+install scala || true
+install sbt || true
+install dmd || true
+install dub || true
+install haskell-platform || true
+install cpanminus || true
+
+install mysql || true
+install sqlite || true
+install mongodb || true
+install memcached || true
+install elasticsearch || true
+install cmake || true
+
+cask install keyremap4macbook || true
+cask install dropbox || true
+cask install hipchat || true
+cask install skype || true
+cask install bathyscaphe || true
+cask install robomongo || true
+cask install Chromium || true
+cask install blender || true
+cask install github || true
+cask install alfred || true
+cask install sourcetree || true
+cask install vlc || true
+cask install intellij-idea-ce || true
+cask install eclipse-ide || true
+cask install sublime-text || true
+cask install totalspaces || true
+cask install totalfinder || true
+cask install iterm2 || true
+cask install appcleaner || true
+cask install sequel-pro || true
+cask install evernote || true
+cask install skitch || true
+# cask install tunnelblick || true
+cask install lightpaper || true
