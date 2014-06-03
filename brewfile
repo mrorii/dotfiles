@@ -32,6 +32,7 @@ install jq || true
 install python3 || true
 install ruby-build || true
 install rbenv || true
+install leiningen || true
 install opam || true
 install scala || true
 install sbt || true
@@ -62,6 +63,7 @@ cask install vlc || true
 cask install intellij-idea-ce || true
 cask install eclipse-ide || true
 cask install sublime-text || true
+cask install lighttable || true
 cask install totalspaces || true
 cask install totalfinder || true
 cask install iterm2 || true
@@ -71,3 +73,4 @@ cask install evernote || true
 cask install skitch || true
 # cask install tunnelblick || true
 cask install lightpaper || true
+cask install musescore || true
